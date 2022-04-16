@@ -1,0 +1,26 @@
+<div class="form-control">
+  <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Your Number</label>
+      <input
+        type="number"
+        class="form-control"
+        id="myNumber"
+        aria-describedby="emailHelp"
+        placeholder="Enter your Number"
+        ngModel
+        name="myNumber"
+        #myNumber ="ngModel"
+        (change)="onHandleChange($event)"
+        (click)="clear($event)"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">Add BOX</button>
+  </form>
+</div>
+
+
+<div class="ubber-cont">
+    <div class="user-box" *ngFor="let box of userInput"></div>
+
+</div>

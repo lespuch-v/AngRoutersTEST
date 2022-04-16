@@ -1,0 +1,20 @@
+<div class="form-control">
+  <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Your Number</label>
+      <input
+        type="number"
+        class="form-control"
+        id="myNumber"
+        aria-describedby="emailHelp"
+        placeholder="Enter your Number"
+        ngModel
+        name="myNumber"
+        #myNumber="ngModel"
+        (change)="fibCalculate($event)"
+      />
+    </div>
+  </form>
+</div>
+
+<h1>Fib-calculations: {{fibNumber}}</h1>

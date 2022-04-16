@@ -1,0 +1,15 @@
+.form-control{
+    max-width: 700px;
+}
+.user-box{
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    margin: 10px;
+
+}
+.ubber-cont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
