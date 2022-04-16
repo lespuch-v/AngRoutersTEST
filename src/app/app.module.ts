@@ -27,8 +27,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     AppRoutingModule,
     RouterModule.forRoot([
       {path: "", component: HomeComponent},
-      {path: "fibonacci", component: FibonachiComponent},
       {path: "box", component: BoxComponent},
+      {path: "fibonacci", component: FibonachiComponent},
       {path: "**", component: NotFoundComponent},
     ])
   ],
